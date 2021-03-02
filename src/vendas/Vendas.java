@@ -18,4 +18,6 @@ public class Vendas {
         // TODO code application logic here
     }
     
+    //metodos aqui
+    
 }
