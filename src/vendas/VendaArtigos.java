@@ -5,10 +5,25 @@
  */
 package vendas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Utilizador
  */
-public class VendaArtigos {
+public class VendaArtigos extends Vendas {
+    
+    private List<Artigo> listaArtigos;
+    public VendaArtigos(int noVenda) {
+        super(noVenda);
+        listaArtigos = new ArrayList<Artigo>();
+    }
+    
+    public List getListaArtigos(){
+        return listaArtigos;
+    }
+    
+    
     
 }

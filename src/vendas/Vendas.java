@@ -5,19 +5,45 @@
  */
 package vendas;
 
+import java.util.Date;
+
 /**
  *
  * @author Utilizador
  */
 public class Vendas {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    private int noVenda;
+    private Date dataVenda;
+    private float valor;
+    
+    public Vendas(int noVenda){
+        this.noVenda = noVenda;
+    }
+
+    public int getNoVenda() {
+        return noVenda;
+    }
+
+    
+
+    public Date getDataVenda() {
+        return dataVenda;
+    }
+
+    public void setDataVenda(Date dataVenda) {
+        this.dataVenda = dataVenda;
+    }
+
+    public float getValor() {
+        return valor;
+    }
+
+    public void setValor(float valor) {
+        this.valor = valor;
     }
     
-    //metodos aqui
+    
+   
     
 }
