@@ -5,10 +5,25 @@
  */
 package vendas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Utilizador
  */
-public class VendaServiços {
+public class VendaServiços extends Vendas{
+    private List<Servicos> listaServicos;
+    public VendaServiços(int noVenda) {
+        super(noVenda);
+        
+        listaServicos = new ArrayList<Servicos>();
+    }
+    
+    public List getListaServicos(){
+        return listaServicos;
+    }
+    
+    
     
 }
