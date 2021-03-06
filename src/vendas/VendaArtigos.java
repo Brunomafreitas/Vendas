@@ -15,13 +15,22 @@ import java.util.List;
 public class VendaArtigos extends Vendas {
     
     private List<Artigo> listaArtigos;
-    public VendaArtigos(int noVenda) {
-        super(noVenda);
+    public VendaArtigos(int noVenda, String tipo) {
+        super(noVenda,tipo);
         listaArtigos = new ArrayList<Artigo>();
     }
     
     public List getListaArtigos(){
         return listaArtigos;
+    }
+    
+    public int contaVendaArtigo(){
+        int countArtigo = 0;
+        for(Artigo a : listaArtigos){
+            countArtigo++;
+        }
+        
+        return countArtigo;
     }
     
     

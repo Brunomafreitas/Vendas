@@ -14,8 +14,8 @@ import java.util.List;
  */
 public class VendaServiços extends Vendas{
     private List<Servicos> listaServicos;
-    public VendaServiços(int noVenda) {
-        super(noVenda);
+    public VendaServiços(int noVenda, String tipo) {
+        super(noVenda, tipo);
         
         listaServicos = new ArrayList<Servicos>();
     }

@@ -6,6 +6,7 @@
 package vendas;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -30,6 +31,27 @@ public class ColVendas {
         }
     }
     
+    public int noVendas(Date dataVenda){
+        int countVendas = 0;
+        for(Vendas i : listaDeVendas){
+            if(i.getDataVenda() == dataVenda){
+               countVendas++; 
+            }
+        }
+        
+        return countVendas;
+    }
+    
+    public int devolveQtdArtigosVendidos(){
+            int countArtigos = 0;
+        for(Vendas v : listaDeVendas){
+            if(v.getTipo() == "Artigos"){
+                countArtigos++;
+            }
+        }
+        return countArtigos;
+            
+    }
     
     
 }

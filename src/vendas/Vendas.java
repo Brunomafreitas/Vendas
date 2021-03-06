@@ -16,13 +16,19 @@ public class Vendas {
     private int noVenda;
     private Date dataVenda;
     private float valor;
+    private String tipo;
     
-    public Vendas(int noVenda){
+    public Vendas(int noVenda, String tipo){
         this.noVenda = noVenda;
+        this.tipo = tipo;
     }
 
     public int getNoVenda() {
         return noVenda;
+    }
+
+    public String getTipo() {
+        return tipo;
     }
 
     
