@@ -17,10 +17,18 @@ public class ColVendas {
     
     private List<Vendas> listaDeVendas;
     
+    /**
+     *
+     */
     public ColVendas(){
         listaDeVendas = new ArrayList<Vendas>();
     }
     
+    /**
+     *
+     * @param v
+     * método para adicionar uma venda á lista
+     */
     public void addVenda(Vendas v){
         for(Vendas i : listaDeVendas){
             if(v.getNoVenda() != i.getNoVenda()){
@@ -31,6 +39,11 @@ public class ColVendas {
         }
     }
     
+    /**
+     *
+     * @param dataVenda
+     * @return retorna o número de vendas
+     */
     public int noVendas(Date dataVenda){
         int countVendas = 0;
         for(Vendas i : listaDeVendas){
@@ -42,6 +55,10 @@ public class ColVendas {
         return countVendas;
     }
     
+    /**
+     *
+     * @return
+     */
     public int devolveQtdArtigosVendidos(){
             int countArtigos = 0;
         for(Vendas v : listaDeVendas){

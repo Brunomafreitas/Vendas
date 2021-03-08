@@ -17,7 +17,7 @@ public class Vendas {
     private Date dataVenda;
     private float valor;
     private String tipo;
-    
+    /** Construtor da classe Vendas */
     public Vendas(int noVenda, String tipo){
         this.noVenda = noVenda;
         this.tipo = tipo;
