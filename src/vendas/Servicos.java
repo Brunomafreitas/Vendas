@@ -10,5 +10,7 @@ package vendas;
  * @author Utilizador
  */
 public class Servicos {
+    private String nome;
+    private int id;
     
 }
